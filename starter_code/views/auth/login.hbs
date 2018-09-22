@@ -9,7 +9,7 @@
 <form action="/login" method="post">
   <div>
     <label for="email-input"> Email </label>
-    <input type="email" name="email" id="email-input"
+    <input type="email" name="username" id="email-input"
       placeholder="e.g., xena@warrior.company">
   </div>
 
@@ -18,6 +18,8 @@
     <input type="password" name="password" id="password-input"
       placeholder="e.g., ••••••••••••">
   </div>
+
+  <p>{{message}}</p>
 
   <button> Log In </button>
 </form>

@@ -1,10 +1,15 @@
 <p>Welcome to {{title}}</p>
 <nav>
-  <ul>
-    <li> <a href="/signup"> Sign Up </a> </li>
-    <li> <a href="/login"> Log In </a> </li>
+  {{#if user}}
+  <h1>WELCOME {{user.username}}</h1>
+    <iframe src="https://giphy.com/embed/nXxOjZrbnbRxS" width="356" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/win-nXxOjZrbnbRxS">via GIPHY</a></p>
     <li> <a href="/launderers"> Find a Launderer </a> </li>
     <li> <a href="/dashboard"> See Dashboard </a> </li>
     <li> <a href="/logout"> Log Out </a> </li>
+{{else}}
+   <ul>
+    <li> <a href="/signup"> Sign Up </a> </li>
+    <li> <a href="/login"> Log In </a> </li>
   </ul>
+  {{/if}}
 </nav>
